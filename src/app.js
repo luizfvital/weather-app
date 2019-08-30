@@ -9,6 +9,7 @@ const forecast = require('./utils/forecast')
 var pexelsClient = new PexelsAPI('563492ad6f917000010000017fef476acd514156a6fbab947a67eb75')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // Paths for express config
 const publicDirPath = path.join(__dirname, '../public')
@@ -79,7 +80,7 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
+app.listen(port, () => {
+    console.log('Server is up on port ' + port)
 })
 
