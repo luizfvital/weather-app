@@ -67,6 +67,18 @@ button {
     padding: 8px;
 }
 
+#aboutTechList {
+    margin: 0 auto;
+    width: 55%;
+}
+
+#aboutTechList > ul {
+    text-align: left;
+}
+
+#aboutTechList ul li {
+    margin-bottom: 10px;
+}
 
 footer {
     color: #888888;
